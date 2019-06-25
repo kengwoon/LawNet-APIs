@@ -17,7 +17,7 @@ LawNet APIs is offered by the Singapore Academy of Law, which runs [LawNet](http
 
 With these APIs, you and your team will be able to develop and create legal technology solutions powered by LawNet and its rich database of legal content, or enhance your own services with LawNet content.
 
-You can refer to this [developer’s guide](https://github.com/legaltechsal/LawNet-APIs-mock-/blob/master/Technical%20Documentation/APIdocumentation.md) for more information.
+You can refer to this [developer’s guide](https://github.com/legaltechsal/LawNet-APIs/blob/master/Technical%20Documentation/APIdocumentation.md) for more information.
 <br>
 <br> 
 
@@ -32,7 +32,7 @@ To use our APIs, you will need to obtain an API key and data entitlement from us
 ### What are your Terms of Use?
 
 <br>
-Click here to refer to the <a href="https://github.com/legaltechsal/LawNet-APIs-mock-/blob/master/Technical%20Documentation/T%26Cs%20-%20LawNet%20APIs%20170619.pdf">Terms and Conditions</a>.
+Click here to refer to the <a href="https://github.com/legaltechsal/LawNet-APIs/blob/master/Technical%20Documentation/LawNet%20APIs%20T%26Cs.pdf">Terms and Conditions</a>.
 <br>
 <br> 
 
