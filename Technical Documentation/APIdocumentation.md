@@ -114,6 +114,9 @@ In addition to the APIkey, an excel sheet containing a list of content access co
 accessing of data. The access codes for the content is required as a parameter when using services in sections
 3.2.1 and 3.2.2.
 
+<img src="/Technical Documentation/Data Access Level (Entitlement).png" alt="Data Access Level"/>
+<br>
+
 #### 3.1.4 Response Codes
 
 The following standard HTTP response codes.
@@ -361,7 +364,7 @@ binary|Child node of image/pdf. Contains binary format of the images or PDFs. No
 Copyright|Child node of searchResponse. This value holds the copyright statement.|Single
 mainContent|Child node of searchResponse. This node contains body content of the document. (XML/HTML+CSS)|Single
 
-### 3.2.2.1 Example Requests
+### 3.2.2.1 Sample Requests
 
 **_3.2.2.1.1 cURL_**
 
