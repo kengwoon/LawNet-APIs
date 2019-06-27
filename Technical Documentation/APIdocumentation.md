@@ -250,7 +250,7 @@ HttpResponse<String> response = Unirest.post("https://test-legalresearch.api.sal
 ```
 ### 3.2.1.2 Sample Response
 
-<searchResponse>
+```<searchResponse>
     <searchStatistic>
         <total>100</total>
     </searchStatistic>
@@ -327,7 +327,7 @@ HttpResponse<String> response = Unirest.post("https://test-legalresearch.api.sal
             </result>
         </resultList>
     </searchResults>
-</searchResponse>
+</searchResponse>```
 
 ### 3.2.2 Retrieving Content
 
