@@ -115,7 +115,6 @@ accessing of data. The access codes for the content is required as a parameter w
 3.2.1 and 3.2.2.
 
 <img src="/Technical Documentation/Data Access Level (Entitlement).png" alt="Data Access Level"/>
-<br>
 
 #### 3.1.4 Response Codes
 
@@ -202,15 +201,15 @@ snippet| Child node of snippets. A snippet of document content containing the se
 ```
 curl -X POST \
 
-    https://test-legalresearch.api.sal.sg/v1-search/search \
-    
-    -H 'Content-Type: application/x-www-form-urlencoded' \
-    
-    -H 'cache-control: no-cache' \
-    
-    -H 'x-api-key: {{API KEY}}' \
-    
-    -d 'apikey={{API KEY}}&cats=r1&l2cats=r1c1%2Cr1c2%2Cr1c3&l3cats=%23r1c1%2C%23r1c2%2C%23r1c3&searchTerm=sample&page=1&maxperpage=15&orderBy=date-des&surroundingWords=5'
+  https://test-legalresearch.api.sal.sg/v1-content/content \
+  
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  
+  -H 'cache-control: no-cache' \
+  
+  -H 'x-api-key: {{API KEY}}' \
+  
+  -d 'apikey={{API KEY}}&cats=r1&l2cats=r1c1%2Cr1c2%2Cr1c3&l3cats=%23r1c1%2C%23r1c2%2C%23r1c3&docUrl=%2Fsample group%2Fsample 1.xml&format=xml'
     
 ```
 
