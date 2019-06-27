@@ -87,7 +87,13 @@ DELETE. It is also possible to add headers to the requests.
 This section provides you with information about the Legal Research APIs and sample scripts (refer to section 3.2)
 that will function. You are welcome to copy/paste and run the scripts to see the APIs in action.
 
-#### 3.1.1 Authentication
+#### 3.1.1	Base URL
+All Legal Research API URLs referenced in this documentation start with the following base part:
+
+Trial:
+```https://test-legalresearch.api.sal.sg```
+
+#### 3.1.2 Authentication
 
 When you sign up for an account and approval is granted, you will be given a set of Access Credentials including
 an APIkey. The APIkey will determine the content available to your account.
@@ -97,13 +103,15 @@ in the request.
 
 Authentication with the API gateway occurs when searching for cases and retrieving content.
 
-#### 3.1.2 Data Access Level (Entitlement)
+_```Important: Keep your API key secret!```_
+
+#### 3.1.3 Data Access Level (Entitlement)
 
 In addition to the APIkey, an excel sheet containing a list of content access codes will also be provided to you for
 accessing of data. The access codes for the content is required as a parameter when using services in sections
 3.2.1 and 3.2.2.
 
-#### 3.1.3 Response Codes
+#### 3.1.4 Response Codes
 
 The following standard HTTP response codes.
 
@@ -118,16 +126,16 @@ The following standard HTTP response codes.
 
 The table below provides you with various scenarios and the expected responses, based on an entitlement below.
 
-|Scenario|Description|Response Code|Expected Response (xml)|
-|------|------|------|-------------------------------------------------|
-1|Category Code is empty|400|```<response><status>error</status><message>Category is a mandatory parameter. Please select a valid category and try again. </message></response>```
-2|Level 2 category code is empty|400| ```<response><status>error</status><message>Level 2 category is a mandatory parameter. Please add a valid sub category and try again. </message></response>```
-3|Level 3 category code is empty|400|```<response><status>error</status><message>Level 3 category is a mandatory parameter. Please add a valid level 3 category and try again. </message></response>```
-4.1|Level 1 to 3 category codes provided are correct|200|Success: Results will be displayed. 
-4.2|Level 1 to 3 category codes provided are correct|200|Success: Results will be displayed. 
-4.3|Level 1 to 3 category codes provided are correct|200|Success: Results will be displayed. 
-5|Invalid Category code or category code that you are not entitled to access|400|```<response><status>error</status><message>The category requested is invalid. The level 2 category requested is invalid. The level 3 category requested is invalid</message></response>```
-6|Level 3 category code that is not available in Legal Research|400|```<response><status>error</status><message>No matching Level 3 category found for the level 2 category. Please add a valid sub category and try again. The level 3 category requested is invalid </message></response>```
+|Scenario|Description|Response Code|Category Code|Level 2 Category Code|Level 3 Category Code|Expected Response (xml)|
+|------|------|------|------|------|------|-------------------------------------------------|
+1|Category Code is empty|400||r1c1| r1c1sc1|```<response><status>error</status><message>Category is a mandatory parameter. Please select a valid category and try again. </message></response>```
+2|Level 2 category code is empty|400|r1|| r1c1sc1| ```<response><status>error</status><message>Level 2 category is a mandatory parameter. Please add a valid sub category and try again. </message></response>```
+3|Level 3 category code is empty|400|r1| r1c1 ||```<response><status>error</status><message>Level 3 category is a mandatory parameter. Please add a valid level 3 category and try again. </message></response>```
+4.1|Level 1 to 3 category codes provided are correct|200|r1| r1c1| r1c1sc1 (To retrieve specific content)|Success: Results will be displayed. Refer to sections 3.2.1.2 and 3.2.2.2
+4.2|Level 1 to 3 category codes provided are correct|200|r1| r1c2| #r1c2 (To retrieve Judgement collection)|Success: Results will be displayed. Refer to sections 3.2.1.2 and 3.2.2.2
+4.3|Level 1 to 3 category codes provided are correct|200|r1, r3| r1c1, r3c14| r1c1sc1, r3c14sc1|Success: Results will be displayed. Refer to sections 3.2.1.2 and 3.2.2.2
+5|Invalid Category code or category code that you are not entitled to access|400|r1, r2|r1c1|r1c1sc1|```<response><status>error</status><message>The category requested [r2] is invalid. The level 2 category requested [r1c2,r1c3] is invalid. The level 3 category requested [#r1c2, #r1c3] is invalid</message></response>```
+6|Level 3 category code that is not available in Legal Research|400|r1|r1c1|r1c1sc50|```<response><status>error</status><message>No matching Level 3 category found for the level 2 category Judgements:r1c1. Please add a valid sub category and try again. The level 3 category requested [r1c1sc50] is invalid </message></response>```
 
 ### 3.2 LEGAL RESEARCH APIS
 
@@ -186,10 +194,9 @@ snippet| Child node of snippets. A snippet of document content containing the se
 **_3.2.1.1.1 cURL_**
 
 ```
-
 curl -X POST \
 
-    {{base url}}/v1-search/search \
+    https://test-legalresearch.api.sal.sg/v1-search/search \
     
     -H 'Content-Type: application/x-www-form-urlencoded' \
     
@@ -197,14 +204,14 @@ curl -X POST \
     
     -H 'x-api-key: {{API KEY}}' \
     
-    -d ‘apikey={{API KEY}}&cats={{Level 1 code}}&l2cats={{Level 2 code}}&l3cats={{Level 3 code}}&searchTerm=sample&page=1&maxperpage=15&orderBy=date-des&surroundingWords=5'
+    -d 'apikey={{API KEY}}&cats=r1&l2cats=r1c1%2Cr1c2%2Cr1c3&l3cats=%23r1c1%2C%23r1c2%2C%23r1c3&searchTerm=sample&page=1&maxperpage=15&orderBy=date-des&surroundingWords=5'
     
 ```
 
 **_3.2.1.1.2 C# (RestSharp)_**
-```
 
-var client = new RestClient(“{{base url}}/v1-search/search");
+```
+var client = new RestClient("https://test-legalresearch.api.sal.sg/v1-search/search");
 
 var request = new RestRequest(Method.POST);
 
@@ -214,16 +221,16 @@ request.AddHeader("x-api-key", "{{API KEY}}");
 
 request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
 
-request.AddParameter("undefined", “apikey={{API KEY}}&cats={{Level 1 code}}&l2cats={{Level 2 code}}&l3cats={{Level 3 code}}&searchTerm=sample&page=1&maxperpage=15&orderBy=date-des&surroundingWords=5”, ParameterType.RequestBody);
+request.AddParameter("undefined", “apikey={{API KEY}}&cats=r1&l2cats=r1c1%2Cr1c2%2Cr1c3&l3cats=%23r1c1%2C%23r1c2%2C%23r1c3&searchTerm=sample&page=1&maxperpage=15&orderBy=date-des&surroundingWords=5”, ParameterType.RequestBody);
 
 IRestResponse response = client.Execute(request);
 
 ```
 
 **_3.2.1.1.3 Java (Unirest)_**
-```
 
-HttpResponse<String> response = Unirest.post("{{base url}}/v1-search/search")
+```
+HttpResponse<String> response = Unirest.post("https://test-legalresearch.api.sal.sg/v1-search/search")
 
   .header("Content-Type", "application/x-www-form-urlencoded")
   
@@ -231,11 +238,91 @@ HttpResponse<String> response = Unirest.post("{{base url}}/v1-search/search")
   
   .header("cache-control", "no-cache")
   
-  .body("apikey={{API KEY}}&cats={{Level 1 code}}&l2cats={{Level 2 code}}&l3cats={{Level 3 code}}&searchTerm=sample&page=1&maxperpage=15&orderBy=date-des&surroundingWords=5")
+  .body("apikey={{API KEY}}&cats=r1&l2cats=r1c1%2Cr1c2%2Cr1c3&l3cats=%23r1c1%2C%23r1c2%2C%23r1c3&searchTerm=sample&page=1&maxperpage=15&orderBy=date-des&surroundingWords=5")
   
   .asString();
 
 ```
+### 3.2.1.2 Sample Response
+
+<searchResponse>
+    <searchStatistic>
+        <total>100</total>
+    </searchStatistic>
+    <searchResults>
+        <resultList>
+            <result>
+                <documentId>/Sample Group/sample 1.xml</documentId>
+                <document>
+                    <Title>
+      Sample Title 1</Title>
+                    <Citation>[2019] sample 1</Citation>
+                </document>
+                <format>
+                    <xml>Yes</xml>
+                    <pdf>No</pdf>
+                </format>
+                <relevance>34</relevance>
+                <category>Sample Group</category>
+                <documentTooltipHolder>
+                    <court>Court</court>
+                    <corams>Luke Tan</corams>
+                    <date>18 April 2018</date>
+                    <caseno>sample-1111-2019 &amp; Ors</caseno>
+                    <catchword>No catchword</catchword>
+                </documentTooltipHolder>
+                <casereference>
+                    <following>0</following>
+                    <referring>6</referring>
+                    <distinguishing>0</distinguishing>
+                    <notfollowing>0</notfollowing>
+                    <overruling>0</overruling>
+                </casereference>
+                <snippets>
+                    <snippet>...carefully laid trap by the 
+                        <b>sample</b> content to...
+                    </snippet>
+                </snippets>
+            </result>
+            <result>
+                <documentId>/Sample Group/sample 2.xml</documentId>
+                <document>
+                    <Title>
+      Sample Title 2</Title>
+                    <Citation>[2017] Sample 2</Citation>
+                </document>
+                <format>
+                    <xml>Yes</xml>
+                    <pdf>No</pdf>
+                </format>
+                <relevance>58</relevance>
+                <category>Sample Group</category>
+                <documentTooltipHolder>
+                    <court>Court</court>
+                    <corams>Lim David</corams>
+                    <date>18 December 2017</date>
+                    <caseno>Sample 12344/2019, Sample No.1111/2019/01</caseno>
+                    <catchword>Damages,  Tort</catchword>
+                </documentTooltipHolder>
+                <casereference>
+                    <following>0</following>
+                    <referring>0</referring>
+                    <distinguishing>0</distinguishing>
+                    <notfollowing>0</notfollowing>
+                    <overruling>0</overruling>
+                </casereference>
+                <snippets>
+                    <snippet>shouting “protest against the 
+                        <b>sample</b> content!”; and
+                    </snippet>
+                    <snippet>protest against the 
+                        <b>sample</b> content
+                    </snippet>
+                </snippets>
+            </result>
+        </resultList>
+    </searchResults>
+</searchResponse>
 
 ### 3.2.2 Retrieving Content
 
@@ -271,15 +358,14 @@ binary|Child node of image/pdf. Contains binary format of the images or PDFs. No
 Copyright|Child node of searchResponse. This value holds the copyright statement.|Single
 mainContent|Child node of searchResponse. This node contains body content of the document. (XML/HTML+CSS)|Single
 
-### 3.2.2.1 Sample Requests
+### 3.2.2.1 Example Requests
 
 **_3.2.2.1.1 cURL_**
 
 ```
-
 curl -X POST \
 
-  {{base url}}/v1-content/content \
+  https://test-legalresearch.api.sal.sg/v1-content/content \
   
   -H 'Content-Type: application/x-www-form-urlencoded' \
   
@@ -287,19 +373,19 @@ curl -X POST \
   
   -H 'x-api-key: {{API KEY}}' \
   
-  -d ‘apikey={{API KEY}}&cats={{Level 1 code}}&l2cats={{Level 2 code}}&l3cats={{Level 3 code}}&docUrl=%2Fsample group%2Fsample 1.xml&format=xml'
+  -d 'apikey={{API KEY}}&cats=r1&l2cats=r1c1%2Cr1c2%2Cr1c3&l3cats=%23r1c1%2C%23r1c2%2C%23r1c3&docUrl=%2Fsample group%2Fsample 1.xml&format=xml'
 
 ```
 **_3.2.2.1.2 C# (RestSharp)_**
 
 ```
 
-var client = new RestClient("{{base url}}/v1-content/content");
+var client = new RestClient("https://test-legalresearch.api.sal.sg/v1-content/content");
 var request = new RestRequest(Method.POST);
 request.AddHeader("cache-control", "no-cache");
 request.AddHeader("x-api-key", "{{API KEY}}");
 request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-request.AddParameter("undefined",”apikey={{API KEY}}&cats={{Level 1 code}}&l2cats={{Level 2 code}}&l3cats={{Level 3 code}}&docUrl=%2Fsample group%2Fsample 1.xml&format=xml”, ParameterType.RequestBody);
+request.AddParameter("undefined",”apikey={{API KEY}}&cats=r1&l2cats=r1c1%2Cr1c2%2Cr1c3&l3cats=%23r1c1%2C%23r1c2%2C%23r1c3&docUrl=%2Fsample group%2Fsample 1.xml&format=xml”, ParameterType.RequestBody);
 IRestResponse response = client.Execute(request);
 
 ```
@@ -307,15 +393,22 @@ IRestResponse response = client.Execute(request);
 **_3.2.2.1.3 Java (Unirest)_**
 
 ```
-
-HttpResponse<String> response = Unirest.post("{{base url}}/v1-content/content")
+HttpResponse<String> response = Unirest.post("https://test-legalresearch.api.sal.sg/v1-content/content")
   .header("Content-Type", "application/x-www-form-urlencoded")
   .header("x-api-key", "{{API KEY}}")
   .header("cache-control", "no-cache")
-  .body(“apikey={{API KEY}}&cats={{Level 1 code}}&l2cats={{Level 2 code}}&l3cats={{Level 3 code}}&docUrl=%2Fsample group%2Fsample 1.xml&format=xml)
+  .body(“apikey={{API KEY}}&cats=r1&l2cats=r1c1%2Cr1c2%2Cr1c3&l3cats=%23r1c1%2C%23r1c2%2C%23r1c3&docUrl=%2Fsample group%2Fsample 1.xml&format=xml)
   .asString();
 
 ```
+**_3.2.2.2 Sample Response_**
+
+&nbsp; &nbsp; &nbsp; &nbsp; 3.2.2.2.1 [XML](https://github.com/legaltechsal/LawNet-APIs/blob/master/Technical%20Documentation/Sample%20Response%20-%20XML.xml)
+
+&nbsp; &nbsp; &nbsp; &nbsp; 3.2.2.2.2 [XML+Images](https://github.com/legaltechsal/LawNet-APIs/blob/master/Technical%20Documentation/Sample%20Response%20-%20XML%20%2B%20Images.xml)
+
+&nbsp; &nbsp; &nbsp; &nbsp; 3.2.2.2.2 [HTML+CSS+Supporting Documents](https://github.com/legaltechsal/LawNet-APIs/blob/master/Technical%20Documentation/Sample%20Response%20-%20HTML%20%2B%20CSS%20%2B%20Supporting%20Documents.xml)
+<br>
 
 ## 4 FAQ <a name="qn"></a>
 
@@ -356,6 +449,8 @@ A: Please provide the details on
 1. API request
 1. response/error
 
+Sample screenshot from Postman
+<img src="/Technical Documentation/Github - Postman sample screenshot.JPG" alt="Postman Sample Screenshot"/>
 <br>
 
 Q: What are the search operators available?
