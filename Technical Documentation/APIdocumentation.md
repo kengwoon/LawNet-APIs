@@ -26,16 +26,19 @@ Version 1.0 (For Marketing Purposes)
 1. [API REFERENCE](#apiref) <br>
 
     3.1 INTRODUCTION <br>
-        &nbsp; &nbsp; &nbsp; 3.1.1 Authentication <br>
-        &nbsp; &nbsp; &nbsp; 3.1.2 Data Access Level (Entitlement) <br>
-        &nbsp; &nbsp; &nbsp; 3.1.3 Response Codes <br>
+        &nbsp; &nbsp; &nbsp; 3.1.1 Base URL <br>
+        &nbsp; &nbsp; &nbsp; 3.1.2 Authentication <br>
+        &nbsp; &nbsp; &nbsp; 3.1.3 Data Access Level (Entitlement) <br>
+        &nbsp; &nbsp; &nbsp; 3.1.4 Response Codes <br>
    
      3.2 LEGAL RESEARCH APIS <br>
          &nbsp; &nbsp; &nbsp; 3.2.1 Searching <br>
          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.1.1 Sample Requests <br>
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.1.2 Sample Response <br>
          &nbsp; &nbsp; &nbsp; 3.2.2 Retrieving Content <br>
-         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.2.1 Sample Requests <br>
-
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.2.1 Example Requests <br>
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.2.2 Sample Response <br>
+         
 1. [FAQ](#qn)
 
 ----
