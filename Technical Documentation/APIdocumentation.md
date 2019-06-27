@@ -36,7 +36,7 @@ Version 1.0 (For Marketing Purposes)
          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.1.1 Sample Requests <br>
          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.1.2 Sample Response <br>
          &nbsp; &nbsp; &nbsp; 3.2.2 Retrieving Content <br>
-         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.2.1 Example Requests <br>
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.2.1 Sample Requests <br>
          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 3.2.2.2 Sample Response <br>
          
 1. [FAQ](#qn)
