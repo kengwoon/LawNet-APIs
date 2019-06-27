@@ -1,0 +1,255 @@
+﻿<searchResponse>
+    <Copyright>Copyright © Government of Singapore.</Copyright>
+<supportingfiles>
+<supporting>
+<image>
+<file>filename.pdf</file>
+<binary>{... binary here}</binary>
+</image>
+</supporting>
+</supportingfiles>
+
+    <mainContent>
+        <html>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=UTF8"/>
+                <meta name="filePath" content="\BLOBS\8\2\82105e00d6afa97348f045dac9d2b99d"/>
+                <style>
+
+
+ .contentsOfFile {margin: 0; padding: 0; font-size: 12px; margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; font-family:Verdana, Arial, Helvetica, sans-serif; color:#000000;}
+
+ P {line-height: 1.5em; padding: 5px 0;}
+
+ </style>
+            </head>
+            <CaseReport>
+                <Metadata seqid="653060000" id="653060000-M" uniqueid="abc4b1c9-1c72-4918-a63e-4b0a4ca34fcc">
+                    <Category xlink:type="locator" xlink:href="Content.xml#r1c1" xmlns:xlink="http://www.w3.org/1999/xlink">Judgments</Category>
+                    <Group>Cases</Group>
+                    <PublishedInfo>
+                        <Uri>/Judgment/653060000-M.xml</Uri>
+                        <PublishedDate>2010-02-05T16:12:00.0000000+08:00</PublishedDate>
+                    </PublishedInfo>
+                    <IndexCourt>High Court</IndexCourt>
+                    <DecisionDate>2009-12-14T00:00:00.0000000+08:00</DecisionDate>
+                    <IndexYear>2009</IndexYear>
+                    <NeutralCitation>
+                        <Year>2009</Year>
+                        <Court>SGHC</Court>
+                        <No>280</No>
+                        <NCit>[2009] SGHC 280</NCit>
+                    </NeutralCitation>
+                    <Citation>
+                        <Year>2009</Year>
+                        <Series>SGHC</Series>
+                        <PageNo>280</PageNo>
+                        <Cit>[2009] SGHC 280</Cit>
+                    </Citation>
+                    <CaseTitle>PT v Exim Pte Ltd</CaseTitle>
+                    <SortTitle>PT v Exim Pte Ltd</SortTitle>
+                    <SortDate>2009-12-14T00:00:00.0000000+08:00</SortDate>
+                    <CaseNumber>OS 2/2009</CaseNumber>
+                    <Parties>
+                        <Party>
+                            <Role xlink:type="locator" xlink:href="Roles.xml#1" xmlns:xlink="http://www.w3.org/1999/xlink">Plaintiff</Role>
+                            <Name>PT</Name>
+                        </Party>
+                        <Party>
+                            <Role xlink:type="locator" xlink:href="Roles.xml#2" xmlns:xlink="http://www.w3.org/1999/xlink">Defendant</Role>
+                            <Name>Exim Pte Ltd</Name>
+                        </Party>
+                        <Party>
+                            <Role xlink:type="locator" xlink:href="Roles.xml#7" xmlns:xlink="http://www.w3.org/1999/xlink">Third Party</Role>
+                        </Party>
+                    </Parties>
+                    <Jurisdiction xlink:type="locator" xlink:href="Jurisdiction.xml#1" xmlns:xlink="http://www.w3.org/1999/xlink">Singapore</Jurisdiction>
+                    <Corams>
+                        <Coram xlink:type="locator" xlink:href="Coram_SG.xml#257" xmlns:xlink="http://www.w3.org/1999/xlink">Lai J</Coram>
+                    </Corams>
+                    <Counsels>
+                        <Counsel>Sukumar Karuppiah and Justin Blaze George (Ravindran &amp; Associates) for the plaintiff</Counsel>
+                        <Counsel>Vijai Parwani (Parwani &amp; Co) for the defendant</Counsel>
+                    </Counsels>
+                    <CatchWords>
+                        <CatchWord order="1" xlink:type="locator" xlink:href="CatchWords.xml#3268" xmlns:xlink="http://www.w3.org/1999/xlink">Trade Marks and Trade Names</CatchWord>
+                        <CatchWord order="2" xlink:type="locator" xlink:href="CatchWords.xml#3282" xmlns:xlink="http://www.w3.org/1999/xlink">Invalidity</CatchWord>
+                    </CatchWords>
+                    <CasesReferred>
+                        <CaseRef id="#case.2" type="local" jurisdiction="Singapore" referringto="N" refcitlinked="Y" refpublished="Y" extrainfo="JUDG">
+                            <CName>'DALIC' Trade Mark</CName>
+                            <Citation valid="N">[1998] 2 SLR 231</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="local" jurisdiction="Singapore" referringto="N" refcitlinked="Y" refpublished="Y" extrainfo="JUDG">
+                            <CName>Weir Warman Ltd v Research &amp; Development Pty Ltd</CName>
+                            <Citation valid="N">[2007] 2 SLR 1073</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="local" jurisdiction="Singapore" referringto="N" refcitlinked="Y" refpublished="Y" extrainfo="JUDG">
+                            <CName>McDonald's Corp v Future Enterprises Pte Ltd</CName>
+                            <Citation valid="N">[2005] 1 SLR 177</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="local" jurisdiction="Singapore" referringto="N" refcitlinked="Y" refpublished="Y" extrainfo="JUDG">
+                            <CName>Nautical Concept Pte Ltd v Jeffery Mark Richard and Another</CName>
+                            <Citation valid="N">[2007] 1 SLR 1071</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="local" jurisdiction="Singapore" referringto="N" refcitlinked="Y" refpublished="Y" extrainfo="JUDG">
+                            <CName>Rothmans of Pall Mall Limited v Maycolson International Ltd</CName>
+                            <Citation valid="N">[2006] 2 SLR 551</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="foreign" jurisdiction="Unknown Jurisdiction" referringto="N" refcitlinked="N" refpublished="N">
+                            <CName>Gromax Plasticulture v Don &amp; Low Nonwovens</CName>
+                            <Citation valid="N">[1999] RPC 367</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="foreign" jurisdiction="UK" referringto="N" refcitlinked="N" refpublished="N">
+                            <CName>Harrison v Teton Valley Trading Co Ltd</CName>
+                            <Citation valid="N">[2004] 1 WLR 2577</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="foreign" jurisdiction="Unknown Jurisdiction" referringto="N" refcitlinked="N" refpublished="N">
+                            <CName>Bentley Motors (1931) Ld v Lagonda, Ld and Walker Owen Bentley</CName>
+                            <Citation valid="N">(1947) 64 RPC 33</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="local" jurisdiction="Singapore" referringto="N" refcitlinked="Y" refpublished="Y" extrainfo="JUDG">
+                            <CName>Yomeishu Seizo Co Ltd and Another v Sinma Medical Products (S) Pte Ltd</CName>
+                            <Citation valid="N">[1991] SLR 499</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="local" jurisdiction="Singapore" referringto="N" refcitlinked="Y" refpublished="Y" extrainfo="JUDG">
+                            <CName>Wing Joo Loong Ginseng Hong (Singapore) Co Pte Ltd v Qinghai Xinyuan Foreign Trade Co Ltd and Another and Another Appeal</CName>
+                            <Citation valid="N">[2009] 2 SLR 814</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="foreign" jurisdiction="Unknown Jurisdiction" referringto="N" refcitlinked="N" refpublished="N">
+                            <CName>Betty's Kitchen Coronation Street Trade Mark</CName>
+                            <Citation valid="N">[2000] RPC 825</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="foreign" jurisdiction="Unknown Jurisdiction" referringto="N" refcitlinked="N" refpublished="N">
+                            <CName>Hobbs QC in Demon Ale Trade</CName>
+                            <Citation valid="N">[2000] RPC 345</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="foreign" jurisdiction="Unknown Jurisdiction" referringto="N" refcitlinked="N" refpublished="N">
+                            <CName>Ferrero SpA's Trade Marks</CName>
+                            <Citation valid="N">[2004] RPC 29</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="local" jurisdiction="Singapore" referringto="N" refcitlinked="Y" refpublished="Y" extrainfo="JUDG">
+                            <CName>The Polo/Lauren Co, LP v Shop-In Department Store Pte Ltd</CName>
+                            <Citation valid="N">[2006] 2 SLR 690</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                        <CaseRef id="#case.2" type="foreign" jurisdiction="Unknown Jurisdiction" referringto="N" refcitlinked="N" refpublished="N">
+                            <CName>Tesco Stores Ltd's Trade Mark Applications</CName>
+                            <Citation valid="N">[2005] RPC 17</Citation> (
+                            <Annotation>refd</Annotation>)
+                        </CaseRef>
+                    </CasesReferred>
+                    <LegisReferred>
+                        <LegisRef id="#legis.5" type="local" legistype="RevEd" legisdate="2009-12-14T00:00:00.0000000+08:00" isdefaultdate="Y">
+                            <LegisTitle legistag="sg.y2005.c332">Trade Marks Act (
+                                <Cap>Cap 332</Cap>,
+                                <Year>2005</Year>
+                                <Edition>Rev Ed</Edition>)
+                            </LegisTitle>
+                            <Prov annot="refd" legistag="sg.y2005.c332.s23">
+                                <Ref1 legistag="sg.y2005.c332.s23">s 23</Ref1>
+                            </Prov>
+                            <Prov annot="refd" legistag="sg.y2005.c332.s23">
+                                <Ref1 legistag="sg.y2005.c332.s23">s 23</Ref1>
+                                <Ref2 legistag="sg.y2005.c332.s23.ss1">(1)</Ref2>
+                            </Prov>
+                            <Prov annot="refd" legistag="sg.y2005.c332.s23">
+                                <Ref1 legistag="sg.y2005.c332.s23">s 23</Ref1>
+                                <Ref2 legistag="sg.y2005.c332.s23.ss4">(4)</Ref2>
+                            </Prov>
+                            <Prov annot="refd" legistag="sg.y2005.c332.s7">
+                                <Ref1 legistag="sg.y2005.c332.s7">s 7</Ref1>
+                                <Ref2 legistag="sg.y2005.c332.s7.ss6">(6)</Ref2>
+                            </Prov>
+                            <Prov annot="refd" legistag="sg.y2005.c332.s5">
+                                <Ref1 legistag="sg.y2005.c332.s5">s 5</Ref1>
+                                <Ref2 legistag="sg.y2005.c332.s5.ss2">(2)</Ref2>
+                                <Ref3 legistag="sg.y2005.c332.s5.ss2.p1-e(ii)">(e)(ii)</Ref3>
+                            </Prov>
+                            <Prov annot="refd" legistag="sg.y2005.c332.s8">
+                                <Ref1 legistag="sg.y2005.c332.s8">s 8</Ref1>
+                                <Ref2 legistag="sg.y2005.c332.s8.ss2">(2)</Ref2>
+                                <Ref3 legistag="sg.y2005.c332.s8.ss2.p1-b">(b)</Ref3>
+                            </Prov>
+                            <Prov annot="refd" legistag="sg.y2005.c332.s8">
+                                <Ref1 legistag="sg.y2005.c332.s8">s 8</Ref1>
+                                <Ref2 legistag="sg.y2005.c332.s8.ss4">(4)</Ref2>
+                            </Prov>
+                        </LegisRef>
+                        <LegisRef id="#legis.5" type="local" legistype="RevEd" legisdate="2009-12-14T00:00:00.0000000+08:00" isdefaultdate="Y">
+                            <LegisTitle legistag="sg.y1992.c332">Trade Marks Act (
+                                <Cap>Cap 332</Cap>,
+                                <Year>1992</Year>
+                                <Edition>Ed</Edition>)
+                            </LegisTitle>
+                            <Prov annot="refd" legistag="sg.y1992.c332.s12">
+                                <Ref1 legistag="sg.y1992.c332.s12">s 12</Ref1>
+                                <Ref2 legistag="sg.y1992.c332.s12.ss1">(1)</Ref2>
+                            </Prov>
+                            <Prov annot="refd" legistag="sg.y1992.c332.s15">
+                                <Ref1 legistag="sg.y1992.c332.s15">s 15</Ref1>
+                            </Prov>
+                            <Prov annot="refd" legistag="sg.y1992.c332.s23">
+                                <Ref1 legistag="sg.y1992.c332.s23">s 23</Ref1>
+                                <Ref2 legistag="sg.y1992.c332.s23.ss1">(1)</Ref2>
+                            </Prov>
+                        </LegisRef>
+                        <LegisRef id="#legis.13" type="foreign" legistype="Statute" jurisdiction="United Kingdom" legisdate="2009-12-14T00:00:00.0000000+08:00" isdefaultdate="Y">
+                            <LegisTitle legistag="uk.y1994">Trade Marks Act 
+                                <Year>1994</Year>
+                            </LegisTitle> (
+                            <Jurisdiction>UK</Jurisdiction>)
+                            <Prov annot="refd" legistag="uk.y1994.s3">
+                                <Ref1 legistag="uk.y1994.s3">s 3</Ref1>
+                                <Ref2 legistag="uk.y1994.s3.ss6">(6)</Ref2>
+                            </Prov>
+                        </LegisRef>
+                    </LegisReferred>
+                    <SLR>YES</SLR>
+                </Metadata>
+            </CaseReport>
+            <body>
+                <p/>
+                <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                    <tbody>
+                        <tr>
+                            <td width="80%">
+                                <p class="Judg-Date-Reserved">14 December 2009</p>
+                            </td>
+                            <td>
+                                <p class="Judg-Date-Reserved">Judgment reserved.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="Judg-Author">Lai J:</p>
+                <p class="Judg-1">
+                    <a id="p1_1"/>1       ...............
+                </p>
+                <p class="Judg-Heading-1">The facts</p>
+                <p class="Judg-1">
+                    <a id="p1_2"/>2	...............
+                </p>
+                <p class="Judg-Heading-1">
+                    <span lang="EN-GB">[LawNet Admin Note: Image 1 is viewable only by 
+                        <a href="http://www.lawnet.com.sg/lnrweb/c/portal/layout?p_l_id=1">LawNet</a> subscribers via the PDF in the Case View Tools.]
+                    </span>
+                </p>
+                
+            </body>
+        </html>
+    </mainContent>
+</searchResponse>
