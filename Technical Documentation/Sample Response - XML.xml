@@ -1,0 +1,140 @@
+﻿<searchResponse>
+    <Copyright>Copyright © Government of Singapore.</Copyright>
+    <mainContent>
+        <!-- Conversion Tool Version 6.0.3 Prod -->
+        <CaseReport xlink:type="extended" neutralcitation="[2016] SGDC 112" year="" volume="" category="unreported" pageno="" series="" SLRMLJcitation="[2016] SGDC 0112" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:exslt="http://exslt.org/common">
+            <Metadata id="99999-SSP">
+                <Category xlink:type="locator" xlink:href="Content.xml#r1c1">Judgments</Category>
+                <Group>Cases</Group>
+                <PublishedInfo>
+                    <Uri>/Judgment/99999-SSP.xml</Uri>
+                    <PublishedDate>2016-05-17T03:00:01.0000000+08:00</PublishedDate>
+                </PublishedInfo>
+                <IndexCourt>District Court</IndexCourt>
+                <DecisionDate>2016-05-13T00:00:00.0000000+08:00</DecisionDate>
+                <IndexYear>2016</IndexYear>
+                <Citation>
+                    <Year>[2016]</Year>
+                    <Volume/>
+                    <Series>SGDC</Series>
+                    <PageNo>112</PageNo>
+                    <Cit>[2016] SGDC 112</Cit>
+                </Citation>
+                <NeutralCitation>
+                    <Year>[2016]</Year>
+                    <Court>SGDC</Court>
+                    <No>112</No>
+                    <NCit>[2016] SGDC 112</NCit>
+                </NeutralCitation>
+                <CaseTitle>Public Prosecutor v BB</CaseTitle>
+                <SortTitle>Public Prosecutor v BB</SortTitle>
+                <SortDate>2016-05-13T00:00:00.0000000+08:00</SortDate>
+                <CaseNumber>DAC 906035/2016</CaseNumber>
+                <Corams>
+                    <Coram>Ow Yong Tuck Leong</Coram>
+                </Corams>
+                <Parties>
+                    <Party>Public Prosecutor</Party>
+                    <Party>BB</Party>
+                </Parties>
+                <Jurisdiction xlink:type="locator" xlink:href="Jurisdiction.xml#1">Singapore</Jurisdiction>
+                <AdditionalCaseDetails>
+                    <CaseTitle>Public Prosecutor v BB</CaseTitle>
+                </AdditionalCaseDetails>
+                <Counsels>
+                    <Counsel>Counsel 1</Counsel>
+                    <Counsel>Counsel 2</Counsel>
+                </Counsels>
+                <CatchWords>
+                    <CatchWord order="1">No catchword</CatchWord>
+                </CatchWords>
+            </Metadata>
+            <CaseDetails category="unreported" neutralcitation="[2016] SGDC 112">
+                <CaseName>
+                    <Plaintiff>Public Prosecutor</Plaintiff>
+                    <Text indent="none" align="left">v</Text>
+                    <Defendant>BB</Defendant>
+                </CaseName>
+                <RunningHeader>PP v BB</RunningHeader>
+                <NeutralCitation>
+                    <Year>[2016]</Year>
+                    <Court>SGDC</Court>
+                    <No>112</No>
+                </NeutralCitation>
+                <Court>District Court</Court>
+                <SuitNo>DAC 906035/2016</SuitNo>
+                <Coram>
+                    <Judge>District Judge</Judge>
+                </Coram>
+                <HearingDate>29 April 2016</HearingDate>
+                <AdditionalCaseDetails>
+                    <Parties>
+                        <Party>Public Prosecutor</Party>
+                        <Party>Tan Choon Hong</Party>
+                    </Parties>
+                    <RSSFeeds>
+                        <SingaporeLaw supply="n"/>
+                        <JudgmentUpdate supply="y"/>
+                    </RSSFeeds>
+                </AdditionalCaseDetails>
+            </CaseDetails>
+            <HeadNotes category="unreported" neutralcitation="[2016] SGDC 112">
+                <LegisReferred>
+                    <LegisRef type="local" legistype="RevEd">
+                        <LegisTitle legistag="sg">Criminal Procedure Code</LegisTitle>
+                        <Prov legistag="sg.s307">
+                            <Ref1>s 307</Ref1>
+                            <Ref2>(1)</Ref2>
+                        </Prov>,
+                        <Prov legistag="sg.s325">
+                            <Ref1>s 325</Ref1>
+                        </Prov>
+                    </LegisRef>
+                    <LegisRef type="local" legistype="RevEd">
+                        <LegisTitle legistag="sg">Misuse of Drugs Act</LegisTitle>
+                        <Prov legistag="sg.s5">
+                            <Ref1>s 5</Ref1>
+                            <Ref2>(1)</Ref2>
+                            <Ref3>(a)</Ref3>
+                        </Prov>,
+                        <Prov legistag="sg.s5">
+                            <Ref1>s 5</Ref1>
+                            <Ref2>(2)</Ref2>
+                        </Prov>,
+                        <Prov legistag="sg.s8">
+                            <Ref1>s 8</Ref1>
+                            <Ref2>(b)</Ref2>
+                            <Ref3>(ii)</Ref3>
+                        </Prov>,
+                        <Prov legistag="sg.s33">
+                            <Ref1>s 33</Ref1>
+                            <Ref2>(4A)</Ref2>
+                        </Prov>,
+                        <Prov legistag="sg.s33A">
+                            <Ref1>s 33A</Ref1>
+                        </Prov>
+                    </LegisRef>
+                </LegisReferred>
+                <Counsels>
+                    <Counsel>counsel 1</Counsel>;
+                    <Counsel>counsel 2</Counsel>
+                </Counsels>
+            </HeadNotes>
+            <Judgments category="unreported" neutralcitation="[2016] SGDC 112">
+                <JudgmentInfo>
+                    <JudgmentDate day="13" month="May" year="2016"/>
+                </JudgmentInfo>
+                <Judgment>
+                    <Coram>
+                        <Judge>District Judge</Judge>:
+                    </Coram>
+                    <Heading level="1" align="left">The Charges</Heading>
+                    <Para level="1" no="1" pID="p1_1" indent="none">
+                        <Text indent="none" align="left">......</Text>
+                    </Para>
+                    ......
+                </Judgment>
+            </Judgments>
+        </CaseReport>
+    </mainContent>
+</searchResponse>
